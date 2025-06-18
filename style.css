@@ -1,10 +1,123 @@
 body {
-  background: linear-gradient(120deg, #e9f1f7 0%, #f6fbff 100%);
+  background: #f6fbff;
   font-family: 'Segoe UI', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   margin: 0;
   padding: 0;
   color: #212a36;
 }
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 290px;
+  background: #fff;
+  box-shadow: 2px 0 18px 0 rgba(60,100,180,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 44px 24px 32px 24px;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+.profile-pic {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 18px;
+  border: 3px solid #e9f1f7;
+  box-shadow: 0 2px 12px 0 rgba(120,170,220,0.08);
+}
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sidebar-name {
+  font-size: 1.35em;
+  font-weight: 700;
+  color: #246eb9;
+  margin: 0 0 5px 0;
+  letter-spacing: 0.06em;
+}
+.sidebar-title {
+  color: #6a7a8c;
+  font-size: 1em;
+  margin-bottom: 24px;
+}
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 38px;
+}
+.sidebar-nav a {
+  color: #246eb9;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.04em;
+  padding: 8px 0 8px 8px;
+  border-radius: 6px;
+  transition: background 0.16s, color 0.16s;
+}
+.sidebar-nav a:hover {
+  background: #e9f1f7;
+  color: #17457a;
+}
+.sidebar-sns {
+  display: flex;
+  gap: 16px;
+  margin-top: auto;
+}
+.sidebar-sns a img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.82;
+  transition: opacity 0.18s;
+}
+.sidebar-sns a img:hover {
+  opacity: 1;
+}
+
+.main-content {
+  flex: 1;
+  padding: 56px 6vw 48px 6vw;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.section {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 18px 0 rgba(60, 100, 180, 0.08);
+  margin-bottom: 38px;
+  padding: 32px 30px 22px 30px;
+}
+.section h2 {
+  color: #246eb9;
+  margin-top: 0;
+  font-size: 1.35em;
+  border-left: 4px solid #246eb9;
+  padding-left: 12px;
+  margin-bottom: 18px;
+}
+@media (max-width: 900px) {
+  .container { flex-direction: column; }
+  .sidebar { width: 100%; min-height: unset; flex-direction: row; justify-content: flex-start; padding: 24px 6vw; }
+  .sidebar-nav { flex-direction: row; gap: 16px; margin-bottom: 0; }
+  .main-content { padding: 32px 3vw 28px 3vw; }
+}
+@media (max-width: 600px) {
+  .sidebar { flex-direction: column; align-items: center; padding: 18px 4vw; }
+  .main-content { padding: 15px 2vw 12px 2vw; }
+  .section { padding: 14px 4vw 10px 4vw; }
+}
+
 header {
   background: #fff;
   border-bottom: 1px solid #e1eaf4;

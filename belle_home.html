@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hair Salon Belle（ヘアサロン・ベル）</title>
+  <link rel="stylesheet" href="belle_home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="belle-header">
+    <nav class="belle-nav">
+      <a href="#concept">Concept</a>
+      <a href="#menu">Menu</a>
+      <a href="#stylist">Stylist</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#access">Access</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+      <img src="belle_images/hero.jpg" alt="店内写真" class="hero-img">
+      <div class="hero-overlay">
+        <h1 class="belle-title">Hair Salon Belle</h1>
+        <p class="belle-catch">あなたの美しさに、やさしく寄り添う</p>
+        <a href="/reserve" class="belle-cta">ご予約はこちら &rarr;</a>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section id="concept" class="belle-section concept">
+      <h2>Concept</h2>
+      <div class="concept-content">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=500&q=80" alt="カウンセリング" class="concept-img">
+        <div class="concept-text">
+          <h3>丁寧なカウンセリング</h3>
+          <p>お客様一人ひとりに寄り添い、理想のスタイルを叶えるためにじっくりとカウンセリングを行います。自然体でいられる美しさを大切にしています。</p>
+        </div>
+      </div>
+      <div class="concept-content reverse">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80" alt="ナチュラルなスタイル" class="concept-img">
+        <div class="concept-text">
+          <h3>ナチュラルなスタイルづくり</h3>
+          <p>トレンドを取り入れつつも、あなたらしさを引き出すナチュラルなスタイルをご提案します。心地よい空間でリラックスしたひとときを。</p>
+        </div>
+      </div>
+      <!-- ヒーロー下 予約ボタンここまで -->
+    </section>
+    <section id="menu" class="belle-section menu">
+  <h2>Service Menu</h2>
+  <div class="menu-cards">
+    <div class="menu-card">
+      <img src="belle_images/haircut.jpg" alt="カット" class="menu-img">
+      <h3>カット</h3>
+      <p class="menu-price">¥5,000</p>
+      <p>骨格や髪質に合わせて、<br>毎日が楽しくなるカットを。</p>
+      <a href="/reserve?service=haircut" class="reserve-btn">予約する</a>
+    </div>
+    <div class="menu-card">
+      <img src="belle_images/hair colors.jpg" alt="カラー" class="menu-img">
+      <h3>カラー</h3>
+      <p class="menu-price">¥7,500〜</p>
+      <p>透明感と艶を大切に、ダメージレスなカラーを実現します。</p>
+      <a href="/reserve?service=colour" class="reserve-btn">予約する</a>
+    </div>
+    <div class="menu-card">
+      <img src="belle_images/perm.jpg" alt="パーマ" class="menu-img">
+      <h3>パーマ</h3>
+      <p class="menu-price">¥8,000〜</p>
+      <p>やわらかな質感と再現性の高いナチュラルパーマが人気です。</p>
+      <a href="/reserve?service=perm" class="reserve-btn">予約する</a>
+    </div>
+    <div class="menu-card">
+      <img src="belle_images/spa.jpg" alt="ヘッドスパ" class="menu-img">
+      <h3>ヘッドスパ</h3>
+      <p class="menu-price">¥4,000〜</p>
+      <p>癒しと頭皮ケアを両立した極上のリラクゼーションをご体感ください。</p>
+      <a href="/reserve?service=headspa" class="reserve-btn">予約する</a>
+    </div>
+  </div>
+</section>
+    <section id="stylist" class="belle-section stylist">
+      <h2>Stylist</h2>
+      <div class="stylist-cards">
+        <div class="stylist-card">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Yuka Suzuki" class="stylist-img">
+          <h3>Yuka Suzuki</h3>
+          <p>柔らかい女性らしいスタイルが得意。お客様の魅力を最大限に引き出します。</p>
+          <a href="/reserve?staff=yuka" class="reserve-btn">お願いする</a>
+        </div>
+        <div class="stylist-card">
+          <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Mai Tanaka" class="stylist-img">
+          <h3>Mai Tanaka</h3>
+          <p>ショート・ボブの似合わせカットが人気。丁寧なカウンセリングで安心感を。</p>
+          <a href="/reserve?staff=mai" class="reserve-btn">お願いする</a>
+        </div>
+      </div>
+    </section>
+    <style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  background-color: #fffdf4;
+  padding: 30px 20px;
+  border-radius: 12px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.gallery-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.gallery-item .caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  width: 100%;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.gallery-item:hover .caption {
+  opacity: 1;
+}
+</style>
+
+<section id="style-gallery">
+  <h2 style="text-align:center; font-size:1.8rem; margin-top:40px; color:#b58b58;">Style Gallery</h2>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="belle_images/gallery/style1.jpg" alt="style1">
+      <div class="caption">#style1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="belle_images/gallery/style3.jpg" alt="style3">
+      <div class="caption">#style3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="belle_images/gallery/style_casual_short_bangs.jpg" alt="style_casual_short_bangs">
+      <div class="caption">#casual_short_bangs</div>
+    </div>
+    <div class="gallery-item">
+      <img src="belle_images/gallery/style_loose_perm_long.jpg.jpg" alt="style_loose_perm_long">
+      <div class="caption">#loose_perm_long</div>
+    </div>
+    <div class="gallery-item">
+      <img src="belle_images/gallery/style_medium_in_curl.jpg" alt="style_medium_in_curl">
+      <div class="caption">#medium_in_curl</div>
+    </div>
+    <div class="gallery-item">
+      <img src="belle_images/gallery/style_perm_long_nuance.jpg" alt="style_perm_long_nuance">
+      <div class="caption">#perm_long_nuance</div>
+    </div>
+    <div class="gallery-item">
+      <img src="belle_images/gallery/style_perm_short_nuance.jpg.jpg" alt="style_perm_short_nuance">
+      <div class="caption">#perm_short_nuance</div>
+    </div>
+    <div class="gallery-item">
+      <img src="belle_images/gallery/style_semi_long_one_curl.jpg" alt="style_semi_long_one_curl">
+      <div class="caption">#semi_long_one_curl</div>
+    </div>
+    <div class="gallery-item">
+      <img src="belle_images/gallery/style_soft_bob_cut.jpg" alt="style_soft_bob_cut">
+      <div class="caption">#soft_bob_cut</div>
+    </div>
+    <div class="gallery-item">
+      <img src="belle_images/gallery/style_straight_bangs.jpg" alt="style_straight_bangs">
+      <div class="caption">#straight_bangs</div>
+    </div>
+  </div>
+</section>
+
+    <section id="access" class="belle-section access">
+      <h2>Access</h2>
+      <div class="access-info">
+        <p>〒123-4567 東京都中央区ベル通り2-8-1<br>東京メトロ○○駅 徒歩3分</p>
+        <p>営業時間：10:00〜20:00（最終受付19:00）<br>定休日：火曜</p>
+        <div class="sns-links">
+          <a href="#" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="sns-icon"></a>
+          <a href="#" aria-label="LINE"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/line.svg" alt="LINE" class="sns-icon"></a>
+        </div>
+      </div>
+      <div class="access-map">
+        <iframe src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E3%83%99%E3%83%AB%E9%80%9A%E3%82%8A2-8-1&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="180" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    <section id="contact" class="belle-section contact">
+      <h2>ご予約・お問い合わせ</h2>
+      <form class="contact-form">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">ご希望・お問い合わせ内容</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">送信</button>
+      </form>
+    </section>
+  </main>
+  <footer class="belle-footer">
+    <p>Hair Salon Belle｜東京都中央区ベル通り2-8-1<br>&copy; 2025 Hair Salon Belle. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

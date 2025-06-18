@@ -1,0 +1,424 @@
+body {
+  background: #fcf8f3;
+  color: #5c3a1a;
+  font-family: 'Segoe UI', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.cafe-header {
+  background: linear-gradient(120deg, #fff6e1 0%, #fbeedb 100%);
+  box-shadow: 0 2px 10px 0 rgba(140, 90, 40, 0.07);
+  padding: 0 0 0 0;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  min-height: 340px;
+}
+.wix-nav {
+  position: absolute;
+  top: 34px;
+  right: 44px;
+  z-index: 10;
+  background: rgba(255,255,255,0.92);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px 0 rgba(140,90,40,0.06);
+  padding: 7px 28px 7px 20px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.wix-nav a {
+  color: #a87a4a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.08em;
+  padding: 7px 12px;
+  border-radius: 8px;
+  transition: background 0.18s, color 0.18s;
+}
+.wix-nav a:hover {
+  background: #f3e3c6;
+  color: #7c5220;
+}
+.wix-banner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 4px 32px 0 rgba(140,90,40,0.10);
+  height: 300px;
+  background: #efe3d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  box-shadow: 0 2px 16px 0 rgba(140,90,40,0.10);
+  filter: brightness(0.98) blur(0.2px) saturate(1.05);
+}
+.banner-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 3px 20px #a87a4a, 0 1px 2px #fffdfa;
+  background: linear-gradient(120deg,rgba(180,140,90,0.15) 0%,rgba(255,255,255,0.07) 100%);
+  pointer-events: none;
+}
+.wix-title {
+  font-size: 2.6em;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+  color: #fff;
+  font-family: 'Segoe Script', 'Hiragino Kaku Gothic ProN', cursive, sans-serif;
+  background: rgba(60,40,20,0.63);
+  padding: 10px 32px 8px 32px;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px 0 rgba(80,60,30,0.21);
+  text-shadow:
+    0 0 8px #fff,
+    0 2px 20px #a87a4a,
+    0 0 2px #fff,
+    2px 2px 0 #5c3a1a,
+    -2px 2px 0 #5c3a1a,
+    2px -2px 0 #5c3a1a,
+    -2px -2px 0 #5c3a1a;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+.catchcopy {
+  font-size: 1.2em;
+  margin-bottom: 18px;
+  color: #fffdfa;
+  background: rgba(180,140,90,0.18);
+  border-radius: 12px;
+  padding: 8px 18px;
+  pointer-events: auto;
+}
+.banner-btn {
+  background: #a87a4a;
+  color: #fffdfa;
+  border: none;
+  border-radius: 20px;
+  padding: 13px 38px;
+  font-size: 1.13em;
+  font-weight: 700;
+  box-shadow: 0 2px 12px 0 rgba(140,90,40,0.13);
+  margin-top: 10px;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  pointer-events: auto;
+}
+.banner-btn:hover {
+  background: #7c5220;
+  color: #fffbe8;
+  box-shadow: 0 4px 18px 0 rgba(140,90,40,0.18);
+}
+@media (max-width: 900px) {
+  .wix-nav { right: 12px; top: 14px; padding: 7px 10px 7px 10px; }
+  .wix-banner { height: 160px; }
+  .banner-overlay .wix-title { font-size: 1.2em; }
+}
+@media (max-width: 600px) {
+  .wix-nav { position: static; margin: 0 auto 8px auto; box-shadow: none; border-radius: 10px; padding: 6px 2vw; }
+  .wix-banner { height: 90px; border-top-left-radius: 10px; border-top-right-radius: 10px; }
+  .banner-img { border-top-left-radius: 10px; border-top-right-radius: 10px; }
+  .cafe-header { border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; min-height: 120px; }
+}
+
+.cafe-banner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 4px 32px 0 rgba(140,90,40,0.10);
+  height: 240px;
+  background: #efe3d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  box-shadow: 0 2px 16px 0 rgba(140,90,40,0.10);
+  filter: brightness(0.98) blur(0.2px) saturate(1.05);
+}
+@media (max-width: 700px) {
+  .cafe-banner { height: 140px; border-top-left-radius: 16px; border-top-right-radius: 16px; }
+  .banner-img { border-top-left-radius: 16px; border-top-right-radius: 16px; }
+  .cafe-header { border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; }
+}
+
+.cafe-header h1 {
+  margin: 0 0 14px 0;
+  font-size: 2.5em;
+  color: #a87a4a;
+  letter-spacing: 0.11em;
+  font-family: 'Segoe Script', 'Hiragino Kaku Gothic ProN', cursive, sans-serif;
+  text-shadow: 0 2px 8px #f4e8d8;
+}
+.cafe-nav {
+  margin-bottom: 0;
+}
+.cafe-nav a {
+  color: #a87a4a;
+  text-decoration: none;
+  margin: 0 24px;
+  font-weight: 600;
+  font-size: 1.12em;
+  padding: 7px 14px;
+  border-radius: 8px;
+  transition: background 0.18s, color 0.18s;
+}
+.cafe-nav a:hover {
+  background: #f3e3c6;
+  color: #7c5220;
+}
+.wix-main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 38px 18px 44px 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.wix-section.card {
+  background: #fffdfa;
+  border-radius: 22px;
+  box-shadow: 0 2px 18px 0 rgba(180, 140, 60, 0.10);
+  padding: 32px 28px 20px 28px;
+  flex: 1 1 340px;
+  min-width: 290px;
+  max-width: 440px;
+  margin: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+}
+.menu-card {
+  background: #fbeedb;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px 0 rgba(180,140,60,0.08);
+  padding: 16px 22px;
+  font-size: 1.08em;
+  color: #7c5220;
+  min-width: 120px;
+  flex: 1 1 120px;
+  text-align: center;
+}
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 14px;
+}
+.info-list li {
+  margin-bottom: 8px;
+  font-size: 1.07em;
+}
+.info-map iframe {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px 0 rgba(180,140,60,0.07);
+}
+
+.wix-section.card h2 {
+  color: #a87a4a;
+  margin-top: 0;
+  font-size: 1.25em;
+  border-left: 6px solid #a87a4a;
+  padding-left: 13px;
+  margin-bottom: 16px;
+  font-family: 'Segoe Script', 'Hiragino Kaku Gothic ProN', cursive, sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.about-latte {
+  margin: 18px auto 0 auto;
+  text-align: center;
+}
+.latte-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(180,140,60,0.13);
+  margin-bottom: 8px;
+  background: #fbeedb;
+}
+.about-latte figcaption {
+  font-size: 0.97em;
+  color: #a87a4a;
+  margin-top: 0;
+  font-family: 'Segoe Script', 'Hiragino Kaku Gothic ProN', cursive, sans-serif;
+  letter-spacing: 0.06em;
+  background: #fffdfa;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 3px 16px;
+  box-shadow: 0 1px 6px 0 rgba(180,140,60,0.06);
+}
+
+.cafe-menu-list {
+  list-style: none;
+  padding-left: 0;
+}
+.cafe-menu-list li {
+  margin-bottom: 14px;
+  font-size: 1.12em;
+  padding-left: 8px;
+}
+.cafe-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.cafe-contact-form input,
+.cafe-contact-form textarea {
+  border: 1px solid #e2d3b6;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1em;
+  background: #fffaf3;
+  color: #5c3a1a;
+}
+.cafe-contact-form button {
+  background: #a87a4a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.08em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 0 1px 6px 0 rgba(140,90,40,0.07);
+  transition: background 0.18s;
+}
+.cafe-contact-form button:hover {
+  background: #7c5220;
+}
+@media (max-width: 700px) {
+  main { padding: 0 4vw 18px 4vw; }
+  section { padding: 14px 4vw 10px 4vw; }
+  .cafe-header { padding: 20px 0 10px 0; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; }
+  .cafe-header h1 { font-size: 1.5em; }
+}
+
+.cafe-header {
+  background: #fff7e6;
+  box-shadow: 0 2px 10px 0 rgba(200,140,60,0.08);
+  padding: 32px 0 18px 0;
+  text-align: center;
+}
+.cafe-header h1 {
+  margin: 0 0 12px 0;
+  font-size: 2.2em;
+  color: #b57b2e;
+  letter-spacing: 0.09em;
+  font-family: 'Segoe Script', 'Hiragino Kaku Gothic ProN', cursive, sans-serif;
+}
+.cafe-nav {
+  margin-bottom: 0;
+}
+.cafe-nav a {
+  color: #b57b2e;
+  text-decoration: none;
+  margin: 0 22px;
+  font-weight: 500;
+  font-size: 1.08em;
+  transition: color 0.2s;
+}
+.cafe-nav a:hover {
+  color: #7c5220;
+}
+main {
+  max-width: 700px;
+  margin: 32px auto 0 auto;
+  padding: 0 18px 40px 18px;
+}
+section {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 18px 0 rgba(180, 140, 60, 0.07);
+  margin-bottom: 34px;
+  padding: 28px 22px 18px 22px;
+}
+section h2 {
+  color: #b57b2e;
+  margin-top: 0;
+  font-size: 1.28em;
+  border-left: 5px solid #b57b2e;
+  padding-left: 10px;
+  margin-bottom: 16px;
+}
+.cafe-menu-list {
+  list-style: none;
+  padding-left: 0;
+}
+.cafe-menu-list li {
+  margin-bottom: 12px;
+  font-size: 1.08em;
+}
+.cafe-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cafe-contact-form input,
+.cafe-contact-form textarea {
+  border: 1px solid #e2d3b6;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 1em;
+  background: #fffaf3;
+}
+.cafe-contact-form button {
+  background: #b57b2e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 1.05em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background 0.18s;
+}
+.cafe-contact-form button:hover {
+  background: #7c5220;
+}
+@media (max-width: 600px) {
+  main { padding: 0 4vw 18px 4vw; }
+  section { padding: 12px 4vw 10px 4vw; }
+  .cafe-header { padding: 16px 0 8px 0; }
+  .cafe-header h1 { font-size: 1.4em; }
+}
