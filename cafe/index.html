@@ -9,60 +9,204 @@
 <body>
   <header class="cafe-header wix-header">
 
-    <div class="cafe-banner wix-banner">
-      <img src="images/banner.jpg" alt="Sweet Cafe Harmony バナー" class="banner-img">
-      <div class="banner-overlay">
-        <h1 class="wix-title">Sweet Cafe Harmony</h1>
-        <p class="catchcopy">心もほどける、やさしいカフェタイムを。</p>
-
-      </div>
+    <div class="cafe-banner wix-banner hero-banner" style="background-image: url('images/specialty-coffee-handdrip-main.jpg');">
+  <div class="banner-overlay">
+    <h1 class="wix-title">Specialty Coffee</h1>
+    <p class="subtitle-en">Carefully Selected Beans from Around the World</p>
+    <p class="catchcopy">世界中から厳選した豆を、<br>一杯ずつ、丁寧に。</p>
+    <div class="hero-buttons">
+      <a href="#menu" class="cta-btn">メニューを見る</a>
+      <a href="#access" class="cta-btn">店舗情報</a>
     </div>
+  </div>
+</div>
   </header>
+  <!-- サブビジュアル帯：湯気コーヒーカップ -->
+  <section class="cafe-steam-subvisual">
+    <img src="images/coffee-steam-subvisual.jpg" alt="湯気が立ち上るコーヒーカップ" class="steam-img">
+    <div class="steam-copy">香り立つ一杯で、心ほぐれるひととき</div>
+  </section>
   <main class="wix-main">
-    <section class="wix-section card about">
-      <h2>About</h2>
-      <p>木の温もりとやさしい光に包まれる、癒しのカフェ。<br>スペシャリティコーヒーと手作りスイーツで、ほっと一息つける時間を。</p>
-      <figure class="about-latte">
-        <img src="images/latehand.jpg" alt="ラテアートを注ぐ手元の写真" class="latte-img">
-        <figcaption>人気のラテアートでほっこり。</figcaption>
-      </figure>
-    </section>
-    <section class="wix-section card menu">
-      <h2>Menu</h2>
-      <div class="menu-grid">
-        <div class="menu-card"><strong>ラテアートカフェラテ</strong><br>520円</div>
-        <div class="menu-card"><strong>自家製スコーン</strong><br>400円</div>
-        <div class="menu-card"><strong>季節のマフィン</strong><br>450円</div>
-        <div class="menu-card"><strong>ブレンドコーヒー</strong><br>450円</div>
-        <div class="menu-card"><strong>サンドイッチセット</strong><br>900円</div>
+    <!-- セクション2：こだわり紹介 -->
+    <section class="cafe-section feature-section">
+      <h2>Our Specialty</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <img src="images/coffee-beans-closeup-quality.jpg" alt="スペシャルティコーヒー" class="feature-img">
+          <div class="feature-titles">
+            <h3 class="feature-title-ja">スペシャルティコーヒー</h3>
+          </div>
+          <div class="feature-catch">“一杯のコーヒーで、世界が変わる。”</div>
+<p>
+世界中の農園から選び抜いたスペシャルティコーヒー豆を、<br>
+熟練のバリスタが一杯ずつ丁寧にハンドドリップ。<br>
+華やかな香りと奥行きのある味わいは、<br>
+ここでしか体験できない特別な時間を生み出します。
+</p>
+        </div>
+        <div class="feature-item">
+          <img src="images/fresh-baked-scone-warmth.jpg" alt="手作りスイーツ" class="feature-img">
+          <div class="feature-titles">
+            <h3 class="feature-title-ja">手作りスイーツ</h3>
+          </div>
+          <div class="feature-catch">“心までほぐれる、焼きたての幸せ。”</div>
+          <p>毎朝店内で焼き上げる自家製スコーンや、季節ごとに変わるケーキ。<br>素材と手間にこだわったスイーツで、特別なカフェタイムをどうぞ。</p>
+        </div>
+        <div class="feature-item">
+          <img src="images/latte-art-heart-main.jpg" alt="ラテアート" class="feature-img">
+          <div class="feature-titles">
+            <h3 class="feature-title-ja">ラテアート</h3>
+          </div>
+          <div class="feature-catch">“一杯ごとに、アートを。”</div>
+          <p>バリスタが心を込めて描くラテアートは、飲むたびに笑顔になれる魔法。<br>写真を撮りたくなる、ここだけのカフェ体験をお楽しみください。</p>
+        </div>
       </div>
     </section>
-    <section class="wix-section card info">
-      <h2>Info</h2>
-      <ul class="info-list">
-        <li>〒123-4567 東京都中央区カフェ通り1-2-3</li>
-        <li>TEL: 03-1234-5678</li>
-        <li>営業時間: 9:00〜19:00（定休日：水曜）</li>
-        <li>アクセス: 東京メトロ○○駅より徒歩5分</li>
-      </ul>
-      <div class="info-map">
-        <iframe src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E3%82%AB%E3%83%95%E3%82%A7%E9%80%9A%E3%82%8A1-2-3&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="180" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- セクション3：人気メニュー -->
+    <section class="popular-menu">
+      <h2 class="section-title">Popular Menu</h2>
+      <p style="text-align:center; font-size: 0.9rem; color: #999;">← スワイプでメニューが見られます</p>
+      <div class="menu-scroll-wrapper">
+        <div class="menu-scroll-inner">
+          <div class="menu-item">
+            <img src="images/popular-latte-art.jpg" alt="ラテアートカフェラテ" class="menu-img">
+            <h4>ラテアートカフェラテ</h4>
+            <p>香り高いエスプレッソに、愛らしいラテアートを添えて。</p>
+          </div>
+          <div class="menu-item">
+            <img src="images/popular-homemade-scone.jpg" alt="自家製スコーン" class="menu-img">
+            <h4>自家製スコーン</h4>
+            <p>毎朝焼きたて。素材の味を活かしたしっとり食感。</p>
+          </div>
+          <div class="menu-item">
+            <img src="images/popular-seasonal-muffin.jpg" alt="季節のマフィン" class="menu-img">
+            <h4>季節のマフィン</h4>
+            <p>旬のフルーツや素材を活かした、季節限定の一品。</p>
+          </div>
+          <div class="menu-item">
+            <img src="images/popular-sandwich-set.jpg" alt="サンドイッチセット" class="menu-img">
+            <h4>サンドイッチセット</h4>
+            <p>手づくりパンと新鮮野菜のバランスが絶妙なセットメニュー。</p>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="wix-section card contact">
-      <h2>Contact</h2>
-      <form class="cafe-contact-form">
-        <label for="name">お名前</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">メールアドレス</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">お問い合わせ内容</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit">送信</button>
-      </form>
+    <style>
+.menu-scroll-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+}
+.menu-scroll-inner {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.menu-item {
+  flex: 0 0 auto;
+  width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.menu-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+    </style>
+    <section class="customer-reviews">
+      <h2 class="section-title">Customer Reviews</h2>
+      <div class="review-scroll-wrapper">
+        <div class="review-scroll-inner">
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-comment">スコーンが信じられないほどしっとり。ラテアートも可愛くて癒されました！</p>
+            <p class="review-name">– みさき（30代・女性）</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★☆</div>
+            <p class="review-comment">落ち着いた雰囲気で、読書にもぴったり。バリスタさんも親切です。</p>
+            <p class="review-name">– Jun（20代・男性）</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-comment">写真映えするだけじゃなく、味も本格的。つい長居してしまいます。</p>
+            <p class="review-name">– YokoCoffee</p>
+          </div>
+
+        </div>
+      </div>
     </section>
+
+    <style>
+.review-scroll-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+}
+.review-scroll-inner {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.review-card {
+  flex: 0 0 auto;
+  width: 280px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.review-stars {
+  font-size: 1.2rem;
+  color: #FFD700; /* ゴールド */
+  margin-bottom: 0.3rem;
+}
+.review-comment {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+.review-name {
+  font-size: 0.85rem;
+  color: #888;
+  text-align: right;
+}
+    </style>
+    <!-- セクション5：アクセス・営業時間 -->
+    <section class="cafe-section access-section">
+      <h2>Access & Hours</h2>
+      <div class="access-content">
+        <div class="access-map">
+          <iframe src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E3%82%AB%E3%83%95%E3%82%A7%E9%80%9A%E3%82%8A1-2-3&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="180" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="access-info">
+          <ul>
+            <li>〒123-4567 東京都中央区カフェ通り1-2-3</li>
+            <li>営業時間: 9:00〜19:00（定休日：水曜）</li>
+            <li><a href="tel:03-1234-5678" class="tel-btn">TEL: 03-1234-5678</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- フッター -->
+    <footer class="cafe-footer">
+      <div class="footer-sns">
+        <a href="#" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="sns-icon"></a>
+        <a href="#" aria-label="LINE"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/line.svg" alt="LINE" class="sns-icon"></a>
+      </div>
+      <small>&copy; 2025 Sweet Cafe Harmony. All rights reserved.</small>
+      <a href="#contact" class="footer-contact-link">予約フォーム</a>
+    </footer>
   </main>
 
-  </main>
 </body>
 </html>
